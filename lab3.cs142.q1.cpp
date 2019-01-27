@@ -155,7 +155,7 @@ public:
 //using main function
 int main()
 {
-	DLL l1;
+	DoubleLL l1;
 	l1.insert(1);
 	l1.insert(2);
 	l1.insert(3);
