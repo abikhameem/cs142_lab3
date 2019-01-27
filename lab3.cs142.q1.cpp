@@ -3,7 +3,7 @@
 #include<iostream>
 //namespace
 using namespace std;
-class Node
+class Box
 {public:
     int data;
 //pointers to move to next box and previous box
@@ -58,7 +58,7 @@ public:
         //inserts box at a specific position in the linked list
 		 void insertAt(int pos,int value)
 		{int count = 0;     //keeps count of number of boxes in the doubly linked list
-			 box *current = head;     //initializes current pointer with head
+			 Box *current = head;     //initializes current pointer with head
 			 //move current pointer upto last box and increment count
 			 while(current!=NULL)
 			 {count++;
@@ -122,7 +122,7 @@ public:
                 current = current->next;
 				}
 				//set temp pointer as box to be deleted
-				box *temp = new box;
+				Box *temp = new Box;
                 temp = current->next;
                 //re-establish link
 			        current->next = temp->next;
